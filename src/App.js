@@ -1,33 +1,32 @@
 import React from 'react';
 import './App.css';
-import Sidebar from './Sidebar/Sidebar';
-import Header from './Header/Header';
-import Banner from './Banner/Banner';
+import { Route, BrowserRouter } from "react-router-dom";
+import Sidebar from './components/Sidebar/Sidebar';
+import Header from './components/Header/Header';
+import Profile from './components/Profile/Profile';
+import Dialogs from './components/Dialogs/Dialogs';
+import News from './components/News/News';
+import Music from './components/Music/Music';
+import Settings from './components/Settings/Settings';
 
 const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <div className="content">
-        <Sidebar />
-        <main>
-          <div className="main-inner">
-            <Banner />
-            <div className="info">
-              <div className="info__logo">
-                <img src="http://placekitten.com/150/150" className="info__img"/>
-              </div>
-              <div className="info__text">
-                <h2>Barsik M.</h2>
-                <p>Date of Birth: 2 january</p>
-                <p>Education: gratefull</p>
-                <p>Web site: bydex.ru</p>
-              </div>
+    <BrowserRouter>
+      <div className="App">
+        <div className="content">
+          <Sidebar />
+          <main>
+            <div className="main-inner">
+              <Route path="/dialogs" component={Dialogs} />
+              <Route path="/profile" component={Profile} />
+              <Route path="/news" component={News} />
+              <Route path="/music" component={Music} />
+              <Route path="/settings" component={Settings} />
             </div>
-          </div>
-        </main>
+          </main>
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 

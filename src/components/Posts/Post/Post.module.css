@@ -1,0 +1,22 @@
+.post {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+}
+.icon {
+  min-width: 32px;
+  max-width: 32px;
+  margin-right: 16px;
+}
+.info {
+
+}
+.name {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.text {
+  font-size: 14px;
+}
