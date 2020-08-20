@@ -6,6 +6,12 @@
   box-shadow: 1px 1px 10px rgba(0,0,0,.2);
   border-radius: 8px;
   cursor: pointer;
+  transition-property: transform, box-shadow;
+  transition-duration: .3s;
+}
+.item:hover {
+  transform: translateX(24px);
+  box-shadow: 1px 1px 10px rgba(0,0,0,0);
 }
 .imgWrapper {
   position: relative;

@@ -5,7 +5,7 @@ const Logo = (props) => {
   return (
     <div className={`${classes.logo} ${props.parentClass}`}>
         <div className={classes.imgWrapper}>
-            <img className={classes.img} src="http://placekitten.com/120/120" />
+            <img alt="" className={classes.img} src="./myLove.jpg" />
         </div>
     </div>
   );

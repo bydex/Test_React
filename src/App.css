@@ -9,7 +9,7 @@
 .content {
   position: relative;
   padding-left: 300px;
-  min-height: calc(100vh - 144px);
+  min-height: calc(100vh);
 }
 
 
@@ -17,4 +17,6 @@
 .main-inner {
   padding-left: 24px;
   padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
